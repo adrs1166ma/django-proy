@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block titulo %}
+            Inicio
+        {% endblock  %}
+    </title>
+</head>
+<body>
+    <ul>
+        <li><a href="{% url "index" %}">Inicio</a></li>
+        <li><a href="{% url "catalogosHome" %}">Catalogos</a></li>
+        <li><a href="#">Facturacion</a></li>
+        <li><a href="#">Remisiones</a></li>
+        <li><a href="#">Usuarios</a></li>
+    </ul>
+
+    {% block contenido %}
+        <h1>Estas en el menu principal</h1>
+    {% endblock  %}
+</body>
+</html>
