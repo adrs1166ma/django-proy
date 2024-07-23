@@ -22,5 +22,8 @@ from generales import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("",views.index,name="index"),
-    path("catalogo/", include("catalogos.urls"))
+    path("catalogos/", include("catalogos.urls")),
+    path("facturacion/", include("facturacion.urls")),
+    path("remisiones/", include("remisiones.urls")),
+    path("usuarios/", include("usuarios.urls")),
 ]
